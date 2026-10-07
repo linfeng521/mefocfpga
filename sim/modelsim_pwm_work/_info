@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/sim
+T_opt
+!s110 1791359780
+VKPO31Z6GgPSC;60VY[MBZ3
+04 19 4 work tb_pwm_motor_driver fast 0
+=1-f068e36599ba-6ac5fb23-332-94cc
+o-quiet -auto_acc_if_foreign -work pwm_test_work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vdeadtime_gen
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1791359779
+!i10b 1
+!s100 68Ac3nP;eU=`4Jn39OGzS0
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IP2Oj@=hl1>T6_T=H>W84H0
+S1
+R0
+Z5 w1788848212
+Z6 8./../rtl/foc/pwm_motor_driver.v
+Z7 F./../rtl/foc/pwm_motor_driver.v
+!i122 3
+L0 124 37
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z10 !s108 1791359779.000000
+Z11 !s107 ./../rtl/foc/pwm_motor_driver.v|./tb_pwm_motor_driver.v|
+Z12 !s90 -reportprogress|300|-sv|-work|pwm_test_work|./tb_pwm_motor_driver.v|./../rtl/foc/pwm_motor_driver.v|
+!i113 0
+Z13 o-sv -work pwm_test_work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpwm_motor_driver
+R2
+R3
+!i10b 1
+!s100 ;?HV;F:cX_=JV6`EZWL8i0
+R4
+Idl^Re];^60QljOOfi347S1
+S1
+R0
+R5
+R6
+R7
+!i122 3
+L0 23 95
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R1
+vtb_pwm_motor_driver
+R2
+R3
+!i10b 1
+!s100 8C;^3X5PhY@:i0`e>;T?d2
+R4
+I@<Iaf9D_n5Mf8K8=RJQ_K2
+S1
+R0
+w1791359703
+8./tb_pwm_motor_driver.v
+F./tb_pwm_motor_driver.v
+!i122 3
+L0 3 76
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R1

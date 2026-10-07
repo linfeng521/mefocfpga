@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_motor_driver
+INFO: [VRFC 10-311] analyzing module deadtime_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/sim/tb_pwm_motor_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_pwm_motor_driver

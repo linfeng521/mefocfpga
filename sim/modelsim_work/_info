@@ -1,0 +1,228 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/sim
+T_opt
+!s110 1791357350
+V5F]^WzQ;`1Pz4_PFLM^l43
+04 21 4 work tb_open_loop_spin_top fast 0
+=1-f068e36599ba-6ac5f1a3-3a5-9324
+o-quiet -auto_acc_if_foreign -work open_loop_work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vcordic_0
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1791357346
+!i10b 1
+!s100 =iYQ5K0[S8GRO<K@j1J9N1
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICJePJ;SULzhn_UZlha3@80
+S1
+R0
+w1764843009
+8D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/cordic_0.v
+FD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/cordic_0.v
+!i122 0
+L0 3 111
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z7 !s108 1791357346.000000
+Z8 !s107 D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/svpwm_generator.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/inv_park_transform.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/cordic_0.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v|./tb_open_loop_spin_top.v|
+Z9 !s90 -reportprogress|300|-sv|-work|open_loop_work|+define+MODELSIM_SIM|./tb_open_loop_spin_top.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/cordic_0.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/inv_park_transform.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/svpwm_generator.v|D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v|
+!i113 0
+Z10 o-sv -work open_loop_work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -sv -work open_loop_work +define+MODELSIM_SIM -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdeadtime_gen
+R2
+R3
+!i10b 1
+!s100 68Ac3nP;eU=`4Jn39OGzS0
+R4
+IXANX^g^QGTRR[dh7Ieg;L1
+S1
+R0
+Z12 w1788848212
+Z13 8D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v
+Z14 FD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v
+!i122 0
+L0 124 37
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vinv_park_transform
+R2
+R3
+!i10b 1
+!s100 KlcUE^fJ=mfSEKMdC;APl0
+R4
+IBfA;]2eScW1MD[IJZTH_N0
+S1
+R0
+w1764669202
+8D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/inv_park_transform.v
+FD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/inv_park_transform.v
+!i122 0
+L0 2 71
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vopen_loop_spin_top
+R2
+R3
+!i10b 1
+!s100 S]aEKeO1RCLzh;cnlBHJ]0
+R4
+I?DOmikY@GW=?O^n@jdj`80
+S1
+R0
+w1786099866
+8D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v
+FD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v
+!i122 0
+L0 3 163
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vpwm_motor_driver
+R2
+R3
+!i10b 1
+!s100 ;?HV;F:cX_=JV6`EZWL8i0
+R4
+I2=;::SCh>6P8hTG2m_h:F2
+S1
+R0
+R12
+R13
+R14
+!i122 0
+L0 23 95
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vsvpwm_generator
+R2
+R3
+!i10b 1
+!s100 k=NBn;>j`B]hR]XY?V3Jb1
+R4
+I0K:IABYfj]aj:gX4kgoN63
+S1
+R0
+w1764668315
+8D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/svpwm_generator.v
+FD:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/svpwm_generator.v
+!i122 0
+L0 2 104
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vtb_open_loop_spin_top
+R2
+R3
+!i10b 1
+!s100 ^;^g:X?jM95i2X_k;Q3?Q3
+R4
+I@@5ZMcS>ZgD?Z_8Co70=W3
+S1
+R0
+Z15 w1791357098
+Z16 8./tb_open_loop_spin_top.v
+Z17 F./tb_open_loop_spin_top.v
+!i122 0
+L0 2 55
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vvio_1
+R2
+R3
+!i10b 1
+!s100 2P:ZSgcc6YO7GYJaGK0@K0
+R4
+IWLQQTlF3f^63an1:8FcEz2
+S1
+R0
+R15
+R16
+R17
+!i122 0
+L0 58 13
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1

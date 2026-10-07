@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../me_foc.ip_user_files/ip/vio_1/vio_1_sim_netlist.v" \
+"../../../../../rtl/foc/cordic_0.v" \
+"../../../../../rtl/foc/inv_park_transform.v" \
+"../../../../../rtl/foc/pwm_motor_driver.v" \
+"../../../../../rtl/foc/svpwm_generator.v" \
+"../../../../../rtl/toptest/open_loop_spin_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

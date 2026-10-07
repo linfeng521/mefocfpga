@@ -1,0 +1,323 @@
+
+*** Running vivado
+    with args -log open_loop_spin_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source open_loop_spin_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source open_loop_spin_top.tcl -notrace
+Command: synth_design -top open_loop_spin_top -part xc7z010clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30360
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1142.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'open_loop_spin_top' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:3]
+	Parameter PWM_PRD bound to: 500 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vio_1' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/.Xil/Vivado-11728-DESKTOP-NP6HTQ7/realtime/vio_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_1' (1#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/.Xil/Vivado-11728-DESKTOP-NP6HTQ7/realtime/vio_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'probe_out0' of module 'vio_1' is unconnected for instance 'u_vio' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:29]
+WARNING: [Synth 8-7071] port 'probe_out4' of module 'vio_1' is unconnected for instance 'u_vio' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:29]
+WARNING: [Synth 8-7071] port 'probe_out5' of module 'vio_1' is unconnected for instance 'u_vio' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:29]
+WARNING: [Synth 8-7023] instance 'u_vio' of module 'vio_1' has 13 connections declared, but only 10 given [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/cordic_0.v:3]
+	Parameter PIPELINE_stages bound to: 16 - type: integer 
+	Parameter X_START bound to: 16'sb0100110101011000 
+	Parameter Y_START bound to: 16'sb0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (2#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/cordic_0.v:3]
+INFO: [Synth 8-6157] synthesizing module 'inv_park_transform' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/inv_park_transform.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'inv_park_transform' (3#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/inv_park_transform.v:2]
+INFO: [Synth 8-6157] synthesizing module 'svpwm_generator' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/svpwm_generator.v:2]
+	Parameter SQRT3_DIV2 bound to: 16'sb0110111011011001 
+	Parameter HALF bound to: 16'sb0100000000000000 
+	Parameter MAX_MAGNITUDE bound to: 16'sb0111010100110000 
+INFO: [Synth 8-6155] done synthesizing module 'svpwm_generator' (4#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/svpwm_generator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pwm_motor_driver' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v:23]
+	Parameter SYS_CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter PWM_FREQ bound to: 50000 - type: integer 
+	Parameter DEADTIME_NS bound to: 30 - type: integer 
+	Parameter PWM_PRD bound to: 500 - type: integer 
+	Parameter DT_CNT bound to: 2 - type: integer 
+	Parameter DT_COMP_VAL bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'deadtime_gen' [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v:124]
+	Parameter DT_CNT bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'deadtime_gen' (5#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_motor_driver' (6#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/foc/pwm_motor_driver.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_vio'. This will prevent further optimization [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:29]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_inv_park'. This will prevent further optimization [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'open_loop_spin_top' (7#1) [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/rtl/toptest/open_loop_spin_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1196.141 ; gain = 53.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1196.141 ; gain = 53.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1196.141 ; gain = 53.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1196.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/.Xil/Vivado-11728-DESKTOP-NP6HTQ7/vio_1/vio_1/vio_1_in_context.xdc] for cell 'u_vio'
+Finished Parsing XDC File [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/.Xil/Vivado-11728-DESKTOP-NP6HTQ7/vio_1/vio_1/vio_1_in_context.xdc] for cell 'u_vio'
+Parsing XDC File [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/constraints/FOC.xdc]
+Finished Parsing XDC File [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/constraints/FOC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/constraints/FOC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/open_loop_spin_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/open_loop_spin_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1318.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1318.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1318.691 ; gain = 176.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1318.691 ; gain = 176.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_vio. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1318.691 ; gain = 176.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1318.691 ; gain = 176.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 19    
+	   3 Input   16 Bit       Adders := 32    
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 58    
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 43    
+	   4 Input   16 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP vq_sin0, operation Mode is: A*B.
+DSP Report: operator vq_sin0 is absorbed into DSP vq_sin0.
+DSP Report: Generating DSP vd_cos0, operation Mode is: A*B.
+DSP Report: operator vd_cos0 is absorbed into DSP vd_cos0.
+DSP Report: Generating DSP vq_cos0, operation Mode is: A*B.
+DSP Report: operator vq_cos0 is absorbed into DSP vq_cos0.
+DSP Report: Generating DSP vd_sin0, operation Mode is: A*B.
+DSP Report: operator vd_sin0 is absorbed into DSP vd_sin0.
+DSP Report: Generating DSP b1, operation Mode is: A*(B:0x6ed9).
+DSP Report: operator b1 is absorbed into DSP b1.
+DSP Report: Generating DSP b0, operation Mode is: -C+A*(B:0x6ed9)+1-1.
+DSP Report: operator b0 is absorbed into DSP b0.
+DSP Report: operator b1 is absorbed into DSP b0.
+DSP Report: Generating DSP calc_a_raw, operation Mode is: A*(B:0x1f4).
+DSP Report: operator calc_a_raw is absorbed into DSP calc_a_raw.
+DSP Report: Generating DSP calc_b_raw, operation Mode is: A*(B:0x1f4).
+DSP Report: operator calc_b_raw is absorbed into DSP calc_b_raw.
+DSP Report: Generating DSP calc_c_raw, operation Mode is: A*(B:0x1f4).
+DSP Report: operator calc_c_raw is absorbed into DSP calc_c_raw.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1318.691 ; gain = 176.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|inv_park_transform | A*B                 | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inv_park_transform | A*B                 | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inv_park_transform | A*B                 | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inv_park_transform | A*B                 | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svpwm_generator    | A*(B:0x6ed9)        | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svpwm_generator    | -C+A*(B:0x6ed9)+1-1 | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|open_loop_spin_top | A*(B:0x1f4)         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|open_loop_spin_top | A*(B:0x1f4)         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|open_loop_spin_top | A*(B:0x1f4)         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1347.926 ; gain = 205.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1382.129 ; gain = 239.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1383.898 ; gain = 241.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vio_1         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |vio     |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |   314|
+|4     |DSP48E1 |     9|
+|7     |LUT1    |   100|
+|8     |LUT2    |   657|
+|9     |LUT3    |   664|
+|10    |LUT4    |    96|
+|11    |LUT5    |   133|
+|12    |LUT6    |    80|
+|13    |FDCE    |   194|
+|14    |FDPE    |     3|
+|15    |FDRE    |   738|
+|16    |IBUF    |     1|
+|17    |OBUF    |     6|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.797 ; gain = 251.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.797 ; gain = 128.961
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.797 ; gain = 251.512
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1405.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 323 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1405.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1405.895 ; gain = 263.609
+INFO: [Common 17-1381] The checkpoint 'D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/open_loop_spin_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file open_loop_spin_top_utilization_synth.rpt -pb open_loop_spin_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 16:07:21 2026...
