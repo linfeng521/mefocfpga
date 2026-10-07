@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Oct  7 16:06:55 2026
-# Process ID: 11728
+# Start of session at: Wed Oct  7 17:41:33 2026
+# Process ID: 27512
 # Current directory: D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1
-# Command line: vivado.exe -log open_loop_spin_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source open_loop_spin_top.tcl
-# Log file: D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/open_loop_spin_top.vds
+# Command line: vivado.exe -log zynq7020_foc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq7020_foc_top.tcl
+# Log file: D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1/zynq7020_foc_top.vds
 # Journal file: D:/MeData/foccode/mefpgafoc/fpga_foc_motorcontrol/MeFocFPGA/prj/me_foc.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source open_loop_spin_top.tcl -notrace
+source zynq7020_foc_top.tcl -notrace

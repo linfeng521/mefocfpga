@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log open_loop_spin_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source open_loop_spin_top.tcl -notrace
+EAStep vivado -log zynq7020_foc_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source zynq7020_foc_top.tcl -notrace
 
 

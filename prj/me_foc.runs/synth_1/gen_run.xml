@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-2" LaunchTime="1791360391">
-  <File Type="PA-TCL" Name="open_loop_spin_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="open_loop_spin_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="open_loop_spin_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="open_loop_spin_top.vds"/>
-  <File Type="RDS-UTIL" Name="open_loop_spin_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="open_loop_spin_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="open_loop_spin_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="open_loop_spin_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="open_loop_spin_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-2" LaunchTime="1791366075">
+  <File Type="PA-TCL" Name="zynq7020_foc_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="zynq7020_foc_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="zynq7020_foc_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="zynq7020_foc_top.vds"/>
+  <File Type="RDS-UTIL" Name="zynq7020_foc_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="zynq7020_foc_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="zynq7020_foc_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="zynq7020_foc_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="zynq7020_foc_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../rtl/foc/Calibration.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/ad7928/ad7928_dual_reader.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/foc/clarke_transform.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../rtl/foc/cordic_0.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -18,7 +39,28 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../rtl/icmu150/icmu150_dual_reader.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../rtl/foc/inv_park_transform.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/foc/park_transform.V">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/foc/position_pid.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -39,22 +81,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../rtl/zynq7020_foc_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../rtl/toptest/open_loop_spin_top.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../rtl/foc/clarke_transform.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../rtl/foc/park_transform.V">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -64,8 +98,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="open_loop_spin_top"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="zynq7020_foc_top"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -92,5 +125,6 @@
     </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="vio_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_7020"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>

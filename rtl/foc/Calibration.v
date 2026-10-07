@@ -7,13 +7,11 @@
 //   C. RAM: write & read both indexed by COMMAND angle (open_loop_angle)
 //   D. 32-bit math throughout (prevents zero_offset*POLE_PAIRS overflow)
 // =====================================================================
-module auto_calibration_core (
+module auto_calibration_core #(
+    parameter integer POLE_PAIRS = 21
+)(
     input  wire        clk,
     input  wire        rst_n,
-    
-    
-
-    
     input  wire        start_calib,
     output reg         is_calibrating,
     output reg         calib_done,
@@ -30,7 +28,7 @@ module auto_calibration_core (
     output wire [15:0] ram_addr_o          // to ILA
 );
 
-   localparam POLE_PAIRS = 32'd21;
+//    localparam POLE_PAIRS = 32'd21;
     localparam S_IDLE=0, S_PRE_ALIGN=1, S_ALIGN=2, S_RECORD=3, S_FINISH=4;
 
     // --- Averaging: 65536 samples so division is a clean >>16 ---

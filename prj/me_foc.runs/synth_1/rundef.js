@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log open_loop_spin_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source open_loop_spin_top.tcl" );
+         "-log zynq7020_foc_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq7020_foc_top.tcl" );
 
 
 

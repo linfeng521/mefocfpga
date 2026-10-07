@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log open_loop_spin_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source open_loop_spin_top.tcl -notrace" );
+         "-log zynq7020_foc_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source zynq7020_foc_top.tcl -notrace" );
 
 
 

@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 0.2 seconds
-Output:
 `timescale 1ns / 1ps
 
 // Complete motor-control top for the Zynq-7020 motor board.
